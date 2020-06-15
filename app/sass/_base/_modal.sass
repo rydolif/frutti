@@ -1,0 +1,139 @@
+.modal
+	position: relative
+	max-width: 550px
+	width: 100%
+	height: auto
+	padding: 60px
+	margin: 20px 0
+	z-index: 1
+	box-shadow: 0 0 15px 0 rgba(#000, .3)
+	border-radius: 30px
+	background-color: #ffffff
+
+	+r(480)
+		padding: 40px
+
+	&__btn
+		display: flex
+		justify-content: flex-end
+
+		+r(480)
+			max-width: 100%
+
+	div
+		position: relative
+
+	p
+		margin-bottom: 35px
+		text-align: center
+
+	button
+		width: 100%
+		background-color: #ffffff
+		
+		&:hover,
+		&:focus
+			background-color: $accent
+			color: #ffffff
+	
+	input
+		margin-bottom: 25px
+		border: 1px solid #dddfdd
+
+	&__close
+		position: absolute
+		right: 15px
+		top: 15px
+		display: block
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		border: none
+		cursor: pointer
+		transition: all .6s
+		background-color: #dddfdd
+		z-index: 1000
+
+		+r(767)
+			top: 10px
+			right: 10px
+			width: 30px
+			height: 30px
+
+		&:hover,
+		&:focus
+			outline: none
+			transform: rotate(90deg)
+
+			span
+				background: red
+
+		span
+			display: block
+			position: absolute
+			left: 50%
+			top: 50%
+			background: #fff
+			transition: all .6s
+			border-radius: 4px
+			height: 20px
+			width: 3px
+
+			+r(767)
+				height: 18px
+
+			&:first-child
+				transform: translate(-50%, -50%) rotate(45deg)
+
+			&:last-child
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+	&--card
+		max-width: 1200px
+		padding: 40px
+
+
+		+r(767)
+			padding: 20px
+
+		.catalog__form_btn
+			max-width: 50%
+
+			+r(767)
+				max-width: 100%
+
+		&__content
+			display: flex
+			justify-content: space-between
+
+			+r(767)
+				flex-wrap: wrap
+				justify-content: space-around
+
+			&_img
+				width: 30%
+
+				+r(1200)
+					width: 34%
+					min-width: 310px
+					margin-right: 3%
+				
+				+r(767)
+					margin-bottom: 20px
+					margin-right: 0
+
+				p
+					margin-bottom: 0
+
+				img
+					width: 100%
+
+			&_text
+				width: 65%
+
+				+r(1200)
+					width: 100%
+
+				p
+					margin-bottom: 0
+					text-align: left

@@ -1,0 +1,105 @@
+
+input, textarea, select
+	width: 100%
+	border: 1px solid #fff
+	outline: none
+	box-shadow: none
+	// -webkit-appearance: none
+	font-size: 18px
+	background-color: #fff
+	color: #676767
+	border-radius: 25px
+	+transition
+	
+	&:focus:required:invalid
+		border-color: red
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&:required:valid
+		border-color: green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&::placeholder
+		color: #dddddd
+		line-height: 50px
+		font-size: 18px
+
+input, select
+	height: 50px
+	line-height: 50px
+	padding: 0 35px
+
+	&::placeholder
+		line-height: 55px
+		font-size: 16px
+
+	+r(767)
+		padding: 0 15px
+		height: 45px
+		line-height: 45px
+
+		&::placeholder
+			line-height: 45px
+
+
+textarea
+	padding-top: 20px
+	padding-left: 35px
+	padding-right: 35px
+	height: 160px
+	resize: none
+
+	&::placeholder
+		line-height: 1.4
+
+	+r(767)
+		padding: 15px
+		height: 150px
+
+
+label.error
+	position: absolute
+	bottom: -5px
+	right: 25px
+	left: 25px
+	transition: all .3s
+	animation: error .3s linear 1 forwards
+	color: #fff
+	text-align: center
+	font-weight: 600
+	background-color: red
+	border-radius: 10px
+	z-index: 1
+	font-size: 14px
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -8px
+		margin-left: -2px
+		border-bottom: 4px solid red
+		border-left: 4px solid transparent
+		border-right: 4px solid transparent
+		border-top: 4px solid transparent
+
+input[type="numer"]
+	-moz-appearance: textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+	-webkit-appearance: none
+
+input[type="checkbox"]
+	display: none
+
+input[type="checkbox"]:checked + label::after
+	transform: scale(1)
+
+input[type="checkbox"] + label::after
+	transform: scale(0)
+

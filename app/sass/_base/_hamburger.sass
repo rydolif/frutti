@@ -1,0 +1,61 @@
+
+
+.hamburger
+	display: none
+	position: relative
+	padding: 0
+	height: 25px
+	width: 32px
+	border: none
+	background-color: transparent
+	transition: all .3s
+
+	+r(767)
+		display: block
+
+	&:focus,
+	&:hover
+		outline: none
+
+	span
+		position: absolute
+		top: 0
+		height: 3px
+		display: block
+		background-color: $accent
+		border-radius: 3px
+		transition: all .6s
+
+		&:nth-child(1)
+			width: 28px
+
+		&:nth-child(2)
+			width: 20px
+			top: 8px
+
+		&:nth-child(3)
+			top: 16px
+			width: 12px
+
+
+	&--active
+		z-index: 1001
+
+		span
+			transform: rotateY(180deg)
+
+			&:nth-child(1)
+				width: 28px
+				transform: translate3d(0, 9px, 0) rotate(45deg)
+
+
+			&:nth-child(2)
+				width: 28px
+				transform: translate3d(0, 1px, 0) rotate(-45deg)
+
+
+			&:nth-child(3)
+				width: 0
+				opacity: 0
+
+
