@@ -3,15 +3,30 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Главная</title>
+	<title>Fruitness </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.ico">
-	<meta property="og:image" content="img/screenshot.png">
+	<meta property="og:image" content="img/hero--bg.png">
 	<link rel="stylesheet" href="css/main.min.css?v=1">
 </head>
 
 <body>
+
+	<div class="info">
+		<a href="tel:+1234567890">
+			<svg fill="#ed3f39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+				<g><g><path d="M436.992,74.953c-99.989-99.959-262.08-99.935-362.039,0.055s-99.935,262.08,0.055,362.039s262.08,99.935,362.039-0.055c48.006-48.021,74.968-113.146,74.953-181.047C511.986,188.055,485.005,122.951,436.992,74.953z M387.703,356.605c-0.011,0.011-0.022,0.023-0.034,0.034v-0.085l-12.971,12.885c-16.775,16.987-41.206,23.976-64.427,18.432c-23.395-6.262-45.635-16.23-65.877-29.525c-18.806-12.019-36.234-26.069-51.968-41.899c-14.477-14.371-27.483-30.151-38.827-47.104c-12.408-18.242-22.229-38.114-29.184-59.051c-7.973-24.596-1.366-51.585,17.067-69.717l15.189-15.189c4.223-4.242,11.085-4.257,15.326-0.034c0.011,0.011,0.023,0.022,0.034,0.034l47.957,47.957c4.242,4.223,4.257,11.085,0.034,15.326c-0.011,0.011-0.022,0.022-0.034,0.034l-28.16,28.16c-8.08,7.992-9.096,20.692-2.389,29.867c10.185,13.978,21.456,27.131,33.707,39.339c13.659,13.718,28.508,26.197,44.373,37.291c9.167,6.394,21.595,5.316,29.525-2.56l27.221-27.648c4.223-4.242,11.085-4.257,15.326-0.034c0.011,0.011,0.022,0.022,0.034,0.034l48.043,48.128C391.911,345.502,391.926,352.363,387.703,356.605z"/></g>
+				</g>
+			</svg>
+		</a>
+		<a href="mailto:fruitness@yandex.ru">
+			<svg fill="#ed3f39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 299.997 299.997" style="enable-background:new 0 0 299.997 299.997;" xml:space="preserve">
+				<g><g><path d="M149.996,0C67.157,0,0.001,67.158,0.001,149.997c0,82.837,67.156,150,149.995,150s150-67.163,150-150C299.996,67.158,232.835,0,149.996,0z M149.999,52.686l88.763,55.35H61.236L149.999,52.686z M239.868,196.423h-0.009c0,8.878-7.195,16.072-16.072,16.072H76.211c-8.878,0-16.072-7.195-16.072-16.072v-84.865c0-0.939,0.096-1.852,0.252-2.749l84.808,52.883c0.104,0.065,0.215,0.109,0.322,0.169c0.112,0.062,0.226,0.122,0.34,0.179c0.599,0.309,1.216,0.558,1.847,0.721c0.065,0.018,0.13,0.026,0.195,0.041c0.692,0.163,1.393,0.265,2.093,0.265h0.005c0.005,0,0.01,0,0.01,0c0.7,0,1.401-0.099,2.093-0.265c0.065-0.016,0.13-0.023,0.195-0.041c0.63-0.163,1.245-0.412,1.847-0.721c0.114-0.057,0.228-0.117,0.34-0.179c0.106-0.06,0.218-0.104,0.322-0.169l84.808-52.883c0.156,0.897,0.252,1.808,0.252,2.749V196.423z"/></g>
+				</g>
+			</svg>
+		</a>
+	</div>
 
 	<header class="header">
 		<div class="header__container container">
@@ -72,12 +87,8 @@
 					</div>
 					<div class="catalog__form">
 						<a href="#" class="card1_open catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -91,13 +102,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card2_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -111,13 +118,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card3_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -131,13 +134,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card4_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -152,13 +151,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card5_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -172,13 +167,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card6_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -192,13 +183,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card7_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -212,13 +199,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card8_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 
@@ -232,13 +215,9 @@
 						</p>
 					</div>
 					<div class="catalog__form">
-						<a href="#" class="catalog__form_btn btn">Подробнее</a>
-						<div class="catalog__form_input">
-							<span class="catalog__form_button catalog__form_button--minus"></span>
-							<input type="number" step="1" min="1" value="1">
-							<span class="catalog__form_button catalog__form_button--plus"></span>
-						</div>
-						<a href="#" class="catalog__form_btn btn">Заказать</a>
+						<a href="#" class="card9_open catalog__form_btn btn">Подробнее</a>
+						<input type="number" step="1" min="1" value="1" readonly>
+						<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 					</div>
 				</div>
 			</div>
@@ -256,13 +235,9 @@
 							</p>
 						</div>
 						<div class="catalog__form">
-							<a href="#" class="catalog__form_btn btn">Подробнее</a>
-							<div class="catalog__form_input">
-								<span class="catalog__form_button catalog__form_button--minus"></span>
-								<input type="number" step="1" min="1" value="1">
-								<span class="catalog__form_button catalog__form_button--plus"></span>
-							</div>
-							<a href="#" class="catalog__form_btn btn">Заказать</a>
+							<a href="#" class="card11_open catalog__form_btn btn">Подробнее</a>
+							<input type="number" step="1" min="1" value="1" readonly>
+							<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -283,13 +258,9 @@
 							</p>
 						</div>
 						<div class="catalog__form">
-							<a href="#" class="catalog__form_btn btn">Подробнее</a>
-							<div class="catalog__form_input">
-								<span class="catalog__form_button catalog__form_button--minus"></span>
-								<input type="number" step="1" min="1" value="1">
-								<span class="catalog__form_button catalog__form_button--plus"></span>
-							</div>
-							<a href="#" class="catalog__form_btn btn">Заказать</a>
+							<a href="#" class="card12_open catalog__form_btn btn">Подробнее</a>
+							<input type="number" step="1" min="1" value="1" readonly>
+							<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -305,13 +276,9 @@
 							</p>
 						</div>
 						<div class="catalog__form">
-							<a href="#" class="catalog__form_btn btn">Подробнее</a>
-							<div class="catalog__form_input">
-								<span class="catalog__form_button catalog__form_button--minus"></span>
-								<input type="number" step="1" min="1" value="1">
-								<span class="catalog__form_button catalog__form_button--plus"></span>
-							</div>
-							<a href="#" class="catalog__form_btn btn">Заказать</a>
+							<a href="#" class="card13_open catalog__form_btn btn">Подробнее</a>
+							<input type="number" step="1" min="1" value="1" readonly>
+							<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -332,13 +299,9 @@
 							</p>
 						</div>
 						<div class="catalog__form">
-							<a href="#" class="catalog__form_btn btn">Подробнее</a>
-							<div class="catalog__form_input">
-								<span class="catalog__form_button catalog__form_button--minus"></span>
-								<input type="number" step="1" min="1" value="1">
-								<span class="catalog__form_button catalog__form_button--plus"></span>
-							</div>
-							<a href="#" class="catalog__form_btn btn">Заказать</a>
+							<a href="#" class="card14_open catalog__form_btn btn">Подробнее</a>
+							<input type="number" step="1" min="1" value="1" readonly>
+							<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -346,7 +309,7 @@
 				<div class="catalog__item">
 					<p class="catalog__item_title">Персик + кизил + инжир</p>
 					<div>
-						<img src="img/catalog--item11.png" alt="">
+						<img src="img/catalog--item12.png" alt="">
 						<div class="catalog__item_info">
 							<p class="catalog__item_kg">Цена за кг:</p>
 							<p class="catalog__item_price">
@@ -355,13 +318,9 @@
 							</p>
 						</div>
 						<div class="catalog__form">
-							<a href="#" class="catalog__form_btn btn">Подробнее</a>
-							<div class="catalog__form_input">
-								<span class="catalog__form_button catalog__form_button--minus"></span>
-								<input type="number" step="1" min="1" value="1">
-								<span class="catalog__form_button catalog__form_button--plus"></span>
-							</div>
-							<a href="#" class="catalog__form_btn btn">Заказать</a>
+							<a href="#" class="card15_open catalog__form_btn btn">Подробнее</a>
+							<input type="number" step="1" min="1" value="1" readonly>
+							<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -373,7 +332,7 @@
 							<img src="img/catalog--label-k.png" alt="">
 							«Думай вместе с Калием» 
 						</p>
-						<img src="img/catalog--item11.png" alt="">
+						<img src="img/catalog--item12.png" alt="">
 						<div class="catalog__item_info">
 							<p class="catalog__item_kg">Цена за кг:</p>
 							<p class="catalog__item_price">
@@ -382,13 +341,9 @@
 							</p>
 						</div>
 						<div class="catalog__form">
-							<a href="#" class="catalog__form_btn btn">Подробнее</a>
-							<div class="catalog__form_input">
-								<span class="catalog__form_button catalog__form_button--minus"></span>
-								<input type="number" step="1" min="1" value="1">
-								<span class="catalog__form_button catalog__form_button--plus"></span>
-							</div>
-							<a href="#" class="catalog__form_btn btn">Заказать</a>
+							<a href="#" class="card16_open catalog__form_btn btn">Подробнее</a>
+							<input type="number" step="1" min="1" value="1" readonly>
+							<a href="#" class="order_open catalog__form_btn btn">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -410,7 +365,7 @@
 					<p>Больше полезности , чем <br>в обычном фрукте </p>
 				</div>
 				<div class="catalog__why_item">
-					<svg fill="#82ba01" width="45" height="45"  vxmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 506.543 506.543" style="enable-background:new 0 0 506.543 506.543;" xml:space="preserve"><g><g><g><path d="M478.141,98.736l-9.936-25.824L450.781,94.4c-0.544,0.688-55.648,67.776-128.144,78.128c-13.76,1.968-26.608,4.528-39.024,7.392c3.408-56.368-19.6-110.144-68.48-160.208L195.821,0l-7.52,26.576c-0.176,0.56-16.848,57.952-59.2,83.792c-46.4,28.4-75.952,59.792-90.192,95.888c-14.385,34.117-14.753,72.526-1.024,106.912c9.608,23.589,28.226,42.373,51.728,52.192c2.301,0.877,4.645,1.636,7.024,2.272c-1.228,15.956,0.178,32.005,4.16,47.504c-8.624,0.752-16.864,1.136-24.576,1.136c-21.166,0.41-42.267-2.478-62.544-8.56l-10.992,30.08c23.802,7.464,48.661,11.004,73.6,10.48c12.392-0.046,24.771-0.82,37.072-2.32c5.26,9.23,11.716,17.725,19.2,25.264c25.914,24.07,60.394,36.748,95.728,35.2c54.059-1.235,106.263-19.944,148.8-53.328l4.688-3.68C425.773,414.944,559.485,310.24,478.141,98.736z M102.013,335.808l-0.256-0.096c-15.81-6.566-28.276-19.27-34.544-35.2c-10.387-26.597-9.893-56.213,1.376-82.448c11.616-29.456,36.8-55.744,77.136-80.384c28.141-18.834,50.19-45.453,63.456-76.608c31.303,34.866,46.249,81.429,41.088,128c-35.648,10.868-68.22,30.013-95.056,55.872C129.778,270.011,111.424,301.359,102.013,335.808z M362.109,424.144l-4.8,3.792c-65.072,51.536-161.376,61.376-202.096,20.656c-2.693-2.701-5.205-5.577-7.52-8.608c65.488-14.912,145.312-53.472,227.296-142.032l-23.488-21.744c-80.16,86.608-157.232,122-218.784,134.4c-4.389-14.947-5.68-30.633-3.792-46.096c4.877-36.916,22.111-71.092,48.896-96.96c32.976-32.992,81.84-53.712,149.344-63.344c49.251-9.531,94.446-33.797,129.6-69.584C511.101,307.472,403.677,391.6,362.109,424.144z"/><path d="M372.157,252.784l24.464,20.624c6.827-8.117,13.664-16.603,20.512-25.456l-25.344-19.536C385.245,236.912,378.685,245.008,372.157,252.784z"/></g></g></g></svg>
+					<svg fill="#82ba01" width="45" height="45"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 506.543 506.543" style="enable-background:new 0 0 506.543 506.543;" xml:space="preserve"><g><g><g><path d="M478.141,98.736l-9.936-25.824L450.781,94.4c-0.544,0.688-55.648,67.776-128.144,78.128c-13.76,1.968-26.608,4.528-39.024,7.392c3.408-56.368-19.6-110.144-68.48-160.208L195.821,0l-7.52,26.576c-0.176,0.56-16.848,57.952-59.2,83.792c-46.4,28.4-75.952,59.792-90.192,95.888c-14.385,34.117-14.753,72.526-1.024,106.912c9.608,23.589,28.226,42.373,51.728,52.192c2.301,0.877,4.645,1.636,7.024,2.272c-1.228,15.956,0.178,32.005,4.16,47.504c-8.624,0.752-16.864,1.136-24.576,1.136c-21.166,0.41-42.267-2.478-62.544-8.56l-10.992,30.08c23.802,7.464,48.661,11.004,73.6,10.48c12.392-0.046,24.771-0.82,37.072-2.32c5.26,9.23,11.716,17.725,19.2,25.264c25.914,24.07,60.394,36.748,95.728,35.2c54.059-1.235,106.263-19.944,148.8-53.328l4.688-3.68C425.773,414.944,559.485,310.24,478.141,98.736z M102.013,335.808l-0.256-0.096c-15.81-6.566-28.276-19.27-34.544-35.2c-10.387-26.597-9.893-56.213,1.376-82.448c11.616-29.456,36.8-55.744,77.136-80.384c28.141-18.834,50.19-45.453,63.456-76.608c31.303,34.866,46.249,81.429,41.088,128c-35.648,10.868-68.22,30.013-95.056,55.872C129.778,270.011,111.424,301.359,102.013,335.808z M362.109,424.144l-4.8,3.792c-65.072,51.536-161.376,61.376-202.096,20.656c-2.693-2.701-5.205-5.577-7.52-8.608c65.488-14.912,145.312-53.472,227.296-142.032l-23.488-21.744c-80.16,86.608-157.232,122-218.784,134.4c-4.389-14.947-5.68-30.633-3.792-46.096c4.877-36.916,22.111-71.092,48.896-96.96c32.976-32.992,81.84-53.712,149.344-63.344c49.251-9.531,94.446-33.797,129.6-69.584C511.101,307.472,403.677,391.6,362.109,424.144z"/><path d="M372.157,252.784l24.464,20.624c6.827-8.117,13.664-16.603,20.512-25.456l-25.344-19.536C385.245,236.912,378.685,245.008,372.157,252.784z"/></g></g></g></svg>
 					<p>Без добавления <br>консервантов и других <br>веществ</p>
 				</div>
 				<div class="catalog__why_item">
@@ -445,7 +400,8 @@
 
 			<div class="contacts__col">
 				<p class="contacts__title">Напишите нам!</p>
-				<form class="contacts__form form">
+				<form class="contacts__form form" action="sendmail.php" method="post">
+					<input type="hidden" name="subject" value="Напишите нам!">
 					<div class="contacts__form_line">
 						<input type="text" name="name" placeholder="Ваше имя" required>
 					</div>
@@ -453,7 +409,7 @@
 						<input type="tel" name="phone" placeholder="Ваш телефон" required>
 					</div>
 					<div class="contacts__form_line">
-						<textarea name="textarea" placeholder="Ваше сообщение" required></textarea>
+						<textarea name="text" placeholder="Ваше сообщение" required></textarea>
 						<button>Отправить <span></span></button>
 					</div>
 				</form>
@@ -474,36 +430,12 @@
 		</div>
 	</footer>
 
-	<div class="modal" id="order">
-
-		<a href="#" class="modal__close order_close" type="button">
-			<span></span>
-			<span></span>
-		</a>
-
-		<form action="sendmail.php" class="form" method="post">
-
-			<p>Оставьте ваши данные и мы свяжемся с вами в ближайшее время!</p>
-			<input type="hidden" name="subject" value="Узнать подробнее!">
-
-			<div class="">
-				<input type="text" name="name" placeholder="Имя" required>
-			</div>
-			<div class="">
-				<input type="tel" name="phone" placeholder="Телефон" required>
-			</div>
-			<div class="modal__btn">
-				<button type="submit" class="btn" name="submit">Отправить</button>
-			</div>
-		</form>
-	</div>
-
 	<div class="modal modal--card" id="card1">
 
-		<a href="#" class="modal__close card1_close" type="button">
+		<button class="modal__close card1_close" type="button">
 			<span></span>
 			<span></span>
-		</a>
+		</button>
 
 		<div class="modal--card__content">
 			<div class="modal--card__content_img">
@@ -517,30 +449,568 @@
 				</div>
 				<div class="catalog__form">
 					<div class="catalog__form_input">
-						<span class="catalog__form_button catalog__form_button--minus"></span>
-						<input type="number" step="1" min="1" value="1">
-						<span class="catalog__form_button catalog__form_button--plus"></span>
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
 					</div>
-					<a href="#" class="catalog__form_btn btn">Заказать</a>
+					<a href="#" class="order_open card1_close order_open catalog__form_btn btn">Заказать</a>
 				</div>
 			</div>
 			<div class="modal--card__content_text">
 				<p>
-					Арбузы из самого сердца солнечного Дагестана, которые прошли специальную обработку, при этом сохранив 
-					всю свою ценность, вкусовые характеристики и даже, аромат. Используя модернизированные запатентованные 
-					технологии шоковой обработки специалисты компании достигли минимального процента пищевых отходов, которые 
-					получились в результате порчи, гниения и воздействия высокой температуры. 
+					Компания Fruitness предлагает вашему вниманию фрукты и ягоды, выращенные в экологически чистых окрестностях Дагестана. Каждый продукт богат антиоксидантами, не содержит в своем составе глютена, ГМО, при этом содержание килокалорий сводится к минимуму. 
 				</p>
 				<p>
-					Исключительно зрелые и свежесорванные плоды подвергаются заморозке. В них не добавляются сахара и консерванты. 
-					А специальная система заморозки позволяет сохранить все природные витамины, питательные вещества, обеспечивая 
-					тем самым, оптимальный вкус и пользу для здоровья.
+					Каждый плод достигает пика своей зрелости. Именно в это время его замораживают, при этом не добавляя никаких сахаров либо консервантов. Специальная технология шоковой заморозки позволяет сохранить все необходимые витамины и питательные вещества, обеспечивая оптимальный вкус, при этом способствуя здоровому пищеварению. 
+				</p>
+				<p>
+					В долине реки Кази-Кумухское  Койсу раскинулись сады Гергебиля. Здесь огромное разнообразие фруктовых деревьев, но все-таки здесь произрастают самые лучшие абрикосы. Отчего долину называют Абрикосовым раем. Таких абрикос вы не найдете нигде. В садах Гергебиля можно найти абрикосы различных сортов и сроков созревания, а это значит, что для каждого плода сохраняется высокое качество созревания, при этом их уборка максимально растянута.
+				</p>
+				<p>
+					Гергебильским абрикосам нет аналогам во всем мире, настолько они вкусны, наполнены полезными питательными веществами. Внешне абрикосы этого края невероятно красивы – ярко-желтые, будто дары самого солнышка, крупные, как настоящие драгоценные камни, а их аромат бесконечно радует и жителей, и туристов Дагестана.  
+				</p>
+				<p>
+					Насладиться этим уникальным вкусом могут исключительно жители горных районов. Ведь обычно в мегаполисы доставляют плоды уже совсем другого качества. И только наша компания создала свою собственную систему заморозки, которая сумеет сохранить не только пользу продукта, но и первозданные вкусовые качества.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card2">
+
+		<button class="modal__close card2_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item2.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card2_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Жители южной части нашей страны наслаждаются вкусными натуральными фруктами, сорванными с деревьев на протяжении большей части года. Аромат, вкусовые характеристики, внешние эстетические качества в разы превосходят те «странные» плоды, которые лежат на полках супермаркетов. Все это можно объяснить простым словом «бизнес». Сегодня многие предприниматели научились срывать плоды за несколько дней-недель до их созревания. Таким образом, дозревая в пути и на полках магазинов, плоды теряют и вкусовые характеристики, и аромат, но самое главное, собственную питательную ценность, необходимую для здорового иммунитета человека.
+				</p>
+				<p>
+					Компания Fruitness предлагает для своих клиентов замороженные плоды. Особая технология позволяет осуществить заморозку свежесобранных фруктов, не теряя их питательной ценности и первозданного внешнего вида.  Потребление наших замороженных фруктов способствует здоровому пищеварению, а также укреплению иммунной системы. 
+				</p>
+				<p>
+					Гунибская айва растет в самом благоприятном районе Дагестана. Налитый солнцем южный плод не просто прекрасен, но и обладает удивительными питательными веществами. Внутри фрукта находятся ценные пектиновые соединения, глюкоза, фруктоза, соли калия, железа, кальция, фосфора и меди, витамины А, В, С, Е и РР.
+				</p>
+				<p>
+					При этом, людям, живущим в мегаполисах с их постоянными стрессовыми ситуациями, рекомендовано систематически употреблять айву, которая содержит огромное число антиоксидантов.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card3">
+
+		<button class="modal__close card3_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item3.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card3_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Компания Fruitness предлагает вашему вниманию продукты из самого сердца солнечного Дагестана, которые прошли специальную обработку, при этом сохранив всю свою ценность, вкусовые характеристики и даже, аромат. Используя модернизированные запатентованные технологии шоковой обработки специалисты компании достигли минимального процента пищевых отходов, которые получились в результате порчи, гниения и воздействия высокой температуры. 
+				</p>
+				<p>
+					Исключительно зрелые и свежесорванные плоды подвергаются заморозке. В них не добавляются сахара и консерванты. А специальная система заморозки позволяет сохранить все природные витамины, питательные вещества, обеспечивая тем самым, оптимальный вкус и пользу для здоровья.  
 				</p>
 				<p>
 					Арбуз выращивается в Магарамкентском районе – самом солнечном районе Дагестана. Здешний климат способствует созреванию бахчевых культур, вкус которых значительно превосходит аналоги. И маленьким, и взрослым известно, что арбуз – это идеальный десерт в жаркую погоду. Ничего удивительного, ведь состав его практически полностью состоит из воды, при этом богат электролитами, что идеально способствует борьбе с жаждой. Это ягода, пожалуй, любима всеми и не оставляет равнодушных к себе людей. Между прочим, богатый ассортимент полезных питательных веществ благотворно влияет на сердечно-сосудистую систему, железы внутренней секреции, увеличивает полезную миклофлору кишечника.
 				</p>
 			</div>
 		</div>
+	</div>
+
+	<div class="modal modal--card" id="card4">
+
+		<button class="modal__close card4_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item4.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card4_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Как же приятно сорвать настоящую ягодку прямо с кустика и в рот! Настоящее райское наслаждение! Но вот только не все жители нашей страны могут позволить себе такие блага. К примеру, жители мегаполисов часто приобретают замороженные плоды, которые вряд ли можно назвать натуральными. Ведь они тысячи раз размораживаются, подвергаются действию более высоких температур, а срываются они и вовсе за несколько дней раньше положенного срока с надеждой, что доспеют «в пути». Разве можно ожидать попадания ценных веществ в организм вместе с употреблением этих плодов?
+				</p>
+				<p>
+					В свою очередь, компания Fruitness предлагает ягоды и фрукты, выращенные в солнечном Дагестане, бережно сорванные, замороженные согласно модернизированной технологии, аккуратно доставленные во все города России. Мы заботимся о здоровье каждого! Каждый продукт богат антиоксидантами, не содержит глютена, не содержит ГМО и, конечно же, низкокалориен. Благодаря применению запатентованной технологии Frozen каждая ягодка сохраняет собственные питательные свойства, аромат, полезные микроэлементы и витамины.
+				</p>
+				<p>
+					Дагестанская клубника особенно наполнена солнышком, ее оттенок – особо насыщенный, а размер – гораздо крупнее того, что вы видели прежде. При этом, клубника – самая настоящая кладезь витамина С. Она повышает сопротивляемость организма к вирусам и инфекциям. При этом, эта наливная ягода известна своим успокаивающим действием и тонизирующим эффектом. Полюбите эту ягоду, и вы сумеете противостоять стрессам и перепадам настроения! Ученые доказали эффективность противостояния клубники онкологическим новообразованиям. Также она улучшает зрение, способствует улучшению работы органов зрения.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card5">
+
+		<button class="modal__close card5_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item5.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<span>400 руб.</span>
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card5_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Компания Fruitness предлагает вашему вниманию технологию заморозки фруктов под названием Froozen, которая обеспечивает фиксирование питательных, а также вкусовых характеристик любого плода. Таким образом, продукт нашей компании можно употреблять в любое время года, наслаждаясь первозданным вкусом, ароматом и обеспечивая организм необходимыми питательными ценностями.
+				</p>
+				<p>
+					Такой способ заморозки особенно актуален для жителей крупных городов, которые лишены возможности питаться спелыми и сочными фруктами и ягодами. Компания Fruitness поставляет свою продукцию из солнечного Дагестана, где фрукты особенно вкусны из-за теплого, солнечного климата и свежего горного воздуха. Специальная технология заморозки позволяет дождаться пика спелости плода, а значит окончательной наполненности его ценными веществами.
+				</p>
+				<p>
+					Крупные и сочные ботлихские медовые груши особенно сладкие. В них содержится высокий процент витаминов, органических кислот, которые повышают защитные функции организма, тем самым поднимая иммунитет человека. Крупный размер, насыщенный аромат, сочность – особые характеристики этого сорта. Груша богата такими минералами, как кремний, железо, кобальт, медь и т.д., которые являются обязательными для нормальной жизнедеятельности человека. При этом, для тех, кто следит за своей фигурой, груша также является прекрасным продуктом, ведь она низкокалорийна. 
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card6">
+
+		<button class="modal__close card6_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item6.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card6_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Жителям больших городов очень важно заботиться о собственном здоровье. Ведь постоянные напряжения, стрессовые ситуации, «искусственная» пища – все это ни в коем случае не идет на пользу человеческому организму. Заботясь о собственном организме, вы не только получите красивый внешний вид, но и здоровое тело, а также укрепите эмоциональную и психическую оболочку. 
+				</p>
+				<p>
+					Компания Fruitness предлагает фрукты, доставленные прямиком из солнечного Дагестана. Поверьте, таких вкусных плодов вы еще не пробовали. Специальная технология позволяет заморозить свежесорванный фрукт, при этом сохранив все его вкусовые качества и питательные характеристики. Благодаря системе шоковой заморозки внешний вид плода нисколько не испортится. Каждый продукт богат антиоксидантами, не содержит глютена, ГМО, отличается низкой калорийностью. 
+				</p>
+				<p>
+					Алыча – фрукт южных стран и регионов России. Регулярное потребление этого фрукта значительно повышает защитные качества всего организма. Огромное содержание аскорбиновой кислоты позволяет исключить такое заболевание, как авитаминоз, а также заражение простудными вирусами. Благодаря низкому содержанию сахара, эти плоды можно включать в рацион диабетикам. Следующий факт будет интересен представительницам прекрасного пола – алыча отлично очищает и омолаживает организм. Систематическое потребление алычи способствует успешному противостоянию радиации и излучению.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card7">
+
+		<button class="modal__close card7_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item7.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card7_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Сегодня, как никогда, актуально поддержание здорового образа жизни. Особенно «страдают» жители мегаполисов в этой ситуации. Если жители южных регионов способны насладиться в полной мере вкусовыми характеристиками спелых южных плодов, их насыщенным стойким ароматом, то городское население полностью лишено таких благ. 
+				</p>
+				<p>
+					Компания Fruitness успешно борется с такой ситуацией. Разработанная и запатентованная технология Froozen позволяет в полной мере «удержать» в каждом фрукте его питательные свойства и полезные качества. И если наши конкуренты срывают и замораживают фрукты, не дожидаясь их спелости, то Froozen позволяет дождаться пика созревания плода и только тогда срывать его и замораживать. Таким образом, благодаря нам абсолютно спелый фрукт можно употреблять в пищу в любое время года.  
+				</p>
+				<p>
+					Каковы же ценные свойства хасавюртовского инжира, привезенного из солнечного района Дагестана? Во-первых, в нем содержатся натуральные сахара, минералы и растворимые волокна. Во-вторых, минеральный состав плода просто впечатляет – калий, кальций, магний, медь, витамины А и К, список можно продолжать долго. Благодаря такому ценному составу, общее самочувствие организма в период систематического употребления инжира улучшается, а податливость вирусным заболеваниям резко снижается. Между прочим, при лечении сердечно-сосудистых заболеваний, врачи рекомендуют потребление инжира наравне с медицинскими препаратами. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card8">
+
+		<button class="modal__close card8_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item8.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card8_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Вы когда-нибудь наслаждались вкусом настоящего южного персика? И это совсем не тот персик, который вы привыкли покупать в супермаркетах! Нет? Тогда милости просим на страницы нашей компании. Здесь мы можем вам предложить настоящие дагестанские плоды, свежесорванные и доставленные благодаря специальной технологии заморозки Froozen. 
+				</p>
+				<p>
+					Компания Fruitness предлагает вашему вниманию натуральные фрукты и ягоды, которые не содержат ГМО, глютена, в них не добавляют сахара, ну и конечно же они низкокалорийны. Эти плоды выращены в самых экологичных районах южной республики. Изобретение специальной технологии было вызвано острым вниманием к здоровью жителей нашей страны, поиском свежих, натуральных продуктов питания, доступных по своей стоимости (что немаловажно), а также лишенных вредных химических примесей. Благодаря такому нововведению все вкусовые и питательные ценности сохраняются, обеспечивая здоровое пищеварение.
+				</p>
+				<p>
+					Персик, которые растет в дагестанском селе Миатли, выгодно выделяется среди всех своих собратьев. Отличается насыщенным оттенком, уникальным ароматом и особо крупным размером. Всем этим факторам он обязан жаркому климату и свежему горному воздуху региона. Персик известен своим общеукрепляющим действием, показан людям при болезнях желудка с пониженной кислотностью. Свежие персики также являются отличным мочегонным средством, при этом эффективно выводят песок из почек. Благодаря фосфору и калий, входящим в состав плода, улучшается работа мозговой деятельности, стимулируется память, повышается общая работоспособность. Также повышается гемоглобин, укрепляется сердечная деятельность, возрастают иммунные силы организма.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card9">
+
+		<button class="modal__close card9_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item9.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card9_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Сегодня, особенно для городских жителей актуален вопрос о здоровом питании. Ведь постоянные стрессы, нервное напряжение, городской смог негативно сказываются на человеческом организме, подрывая здоровый фон. Городской житель напрочь лишен настоящих природных фруктов, поглощая те, что лежат на полках супермаркетов. Их срывают недозрелыми, надеясь на то, что за время пути и периода продажи плоды хоть как-то доспеют либо приобретут оттенок, приближенный к зрелому.
+				</p>
+				<p>
+					Компания Fruitness предлагает вашему вниманию уникальную технологию Froozen, благодаря которой свежесорванный, достигший пика созревания плод подвергается шоковой заморозке. Таким образом, он сохраняет все питательные свойства, ценности, оттенок и даже природный аромат. Благодаря представленной системе каждый житель региона, максимально отдаленный от южной части России, сможет насладиться вкусом дагестанских фруктов и ягод.
+				</p>
+				<p>
+					Кизил произрастает в Кумухе – это живописное село в Дагестане, где соединяется свежий горный воздух и теплое южное солнце. Здесь можно встретить самый сочный, самый вкусный кизил. Витамин С и РР, содержащиеся в этой южной ягоде, отвечают за нормализацию кровяного давления. Дубильные и вяжущие вещества помогают в борьбе с воспалительными процессами организма. Также ягода применяется для иммуностимуляции, успешно применяется при расстройствах желудочно-кишечного тракта, нормализует обмен веществ.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card11">
+
+		<button class="modal__close card11_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item11.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card11_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					В такой громадной ягоде, как арбуз, содержится значительное число ликопена, который считается сильнейшим антиоксидантом. Арбуз мягко очищает организм, за счет чего используется в дни разгрузки. Тонизирует, а также стимулирует организм. В свою очередь, груша в своем составе содержит больше фруктозы, нежели глюкозы. Это говорит о том, что она идеальна при диетах и сахарном диабете. Груша полезна для сердечно-сосудистой системы, укрепляет иммунитет, оказывает противовоспалительное действие, борется с депрессией. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card12">
+
+		<button class="modal__close card12_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item11.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card12_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Только компания Fruitness предлагает вашему вниманию натуральные сеты из плодов, выращенных на экологически чистых территориях Дагестана. Только мы предлагаем вашему вниманию продукты, богатые антиоксидантами, которые не содержат в своем составе глютена, химических примесей, а содержание килокалорий сводится к минимуму.
+				</p>
+				<p>
+					Все фрукты проходят особый вид заморозки, именуемой шоковой. Специальная технология позволяет сохранить все питательные вещества, полезную ценность, а также первичные вкусовые качества. 
+				</p>
+				<p>
+					А знаете ли вы, что арбуз на 92% состоит из воды? Лучшего средства от жажды в жаркий день трудно отыскать. Эта ягода позволяет нормализовать давление, что положительным образом сказывается на уровне сексуального влечения, низкокалориен, при этом всего в нескольких кусках находится суточная доза витамина С. Но самое главное арбуз положительным образом сказывается на зрении. Витамин А и каротеноиды, которые в нем находятся жизненно необходимы для здоровья зрительных органов, кожи, а также имеют собственные свойства антиоксидантов.
+				</p>
+				<p>
+					В плодах груши, выращенных под солнцем Дагестана, настолько много уникальных биологических веществ, что сами собой повышаются защитные силы организма. Благодаря периодическому употреблению дагестанской груши, организм мощно борется с инфекциями, плод также оказывает противовоспалительные действия, борется с депрессией и нервозностью. 
+				</p>
+				<p>
+					Груша, как и арбуз богата витамином А. Поэтому заказав представленный сет, вы непременно усилите качество зрения, позаботитесь о состоянии собственной кожи, а также максимально повысите защитные функции организма.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card13">
+
+		<button class="modal__close card13_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item11.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card13_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Арбуз оказывает на организм тонизирующее, очищающее и защитное действие для организма. Улучшает здоровье органов зрения. Груша также имеет огромное положительное значение для организма человека. Полюбите грушу, и вы забудете, что такое инфекции, частые респираторные заболевания и просто, периодически возникающая хандра или даже, депрессия. А в абрикосе находится рекордное количество калия, что положительно сказывается на оздоровлении сердечно-сосудистой системы и нормализации кровяного давления, в целом.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card14">
+
+		<button class="modal__close card14_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item12.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card14_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Занятный факт, и персик, и кизил, и инжир обладают повышенным уровнем витамина С, а значит ваша иммунная система забудет о болезнях вирусного и инфекционного характера. Персик полезен для людей, которые страдают анемией, у которых пониженное содержание в крови гемоглобина. Кизил обладает мощными защитными функциями, обволакивая организм, будто коконом. Инжир способствует оздоровлению сердечно-сосудистой системы. И это только мизер всех полезных свойств этих трех плодов. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card15">
+
+		<button class="modal__close card15_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item12.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card15_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Занятный факт, и персик, и кизил, и инжир обладают повышенным уровнем витамина С, а значит ваша иммунная система забудет о болезнях вирусного и инфекционного характера. Персик полезен для людей, которые страдают анемией, у которых пониженное содержание в крови гемоглобина. Кизил обладает мощными защитными функциями, обволакивая организм, будто коконом. Инжир способствует оздоровлению сердечно-сосудистой системы. И это только мизер всех полезных свойств этих трех плодов. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--card" id="card16">
+
+		<button class="modal__close card16_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal--card__content">
+			<div class="modal--card__content_img">
+				<img src="img/catalog--item12.png" alt="">
+				<div class="catalog__item_info">
+					<p class="catalog__item_kg">Цена за кг:</p>
+					<p class="catalog__item_price">
+						<b>350 руб.</b>
+					</p>
+				</div>
+				<div class="catalog__form">
+					<div class="catalog__form_input">
+						<input type="number" name="card" step="1" min="1" value="1" readonly>
+					</div>
+					<a href="#" class="order_open card16_close order_open catalog__form_btn btn">Заказать</a>
+				</div>
+			</div>
+			<div class="modal--card__content_text">
+				<p>
+					Вы спросите, почему жители горных местностей обычно являются долгожителями? Да просто потому что они имеют возможность каждый день срывать с ветки наливной сочный плод, наслаждаться его уникальным, особенным вкусом, который не сравним с теми фруктами, которые жители больших городов покупают в супермаркетах. Ведь по-настоящему зрелый плод имеет в своем составе такое огромное количество полезных и ценных веществ, какое эквивалентно настоящему ядерному взрыву в фруктовых масштабах. 
+				</p>
+				<p>
+					Компания Fruitness предусмотрела для каждого своего клиента такую особенность. Мы доставляем плоды из самого солнечного Дагестана. Только здесь фрукты так вкусны, что от них не могут оторваться ни дети, ни старики, ни хрупкие женщины, ни сильные мужчины. А потому и болезней здесь меньше! Откажитесь от того продукта, который лежит в супермаркете и попробуйте оформить один раз ваш заказ у нас! Поверьте, вы не пожалеете. Ведь мы предлагаем уникальную технологию шоковой заморозки. Фрукт дозревает до пика собственной спелости, только потом его срывают с ветки и отправляют в заморозку сразу же. Таким образом, все полезные вещества, первозданный вкус и даже, аромат – все это сохраняется невообразимым образом.
+				</p>
+				<p>
+					В представленном сете настоящий взрыв для вашей мозговой деятельности. И персик, и кизил, и инжир настолько богаты калием, что способны увеличить вашу мозговую активность в несколько раз. Более того, калий также стимулирует память и увеличивает общую работоспособность организма. Тем же, кто борется с сердечно-сосудистыми заболеваниями, включить в общую терапию инжир, не помешает. Кизил идеален в потребление осенью и весной, в пик простудных заболеваний. А персик является доказанным природным антидепрессантом. 
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="order">
+
+		<button class="modal__close order_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<form action="sendmail.php" class="form" method="post">
+
+			<p>Оставьте ваши данные и мы свяжемся с вами в ближайшее время!</p>
+			<input type="hidden" name="subject" value="Абрикос">
+			<input type="hidden" name="number" value="4">
+
+			<div class="">
+				<input type="text" name="name" placeholder="Имя" required>
+			</div>
+			<div class="">
+				<input type="tel" name="phone" placeholder="Телефон" required>
+			</div>
+			<div class="modal__btn">
+				<button type="submit" class="btn" name="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal modal--thanks" id="thanks">
+		<button class="close thanks_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+		<h3>Спасибо за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
 	</div>
 
 	<script src="js/scripts.min.js"></script>
