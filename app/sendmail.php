@@ -8,7 +8,8 @@
 		$card = htmlspecialchars(trim($_POST['card']));
 		$text = htmlspecialchars(trim($_POST['text']));
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
-		$to = 'rudolifrudolif@gmail.com';
+		$to = 'fruitness@yandex.ru';
+		// $to = 'rudolifrudolif@gmail.com';
 
 		$headers = "From: $SITE_TITLE \r\n";
 		$headers .= "Reply-To: ". $email . "\r\n";

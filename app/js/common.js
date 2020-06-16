@@ -38,13 +38,14 @@ $(function() {
       messages: {
         name: "Введите Ваше имя",
         phone: "Введите Ваш телефон",
-        textarea: "Введите Ваше сообщение",
+        text: "Введите Ваше сообщение",
       },
       submitHandler: function(form) {
         var t = {
           name: jQuery('.form-' + index).find("input[name=name]").val(),
           phone: jQuery('.form-' + index).find("input[name=phone]").val(),
-          textarea: jQuery('.form-' + index).find("input[name=textarea]").val(),
+          card: jQuery('.form-' + index).find("input[name=card]").val(),
+          text: jQuery('.form-' + index).find("textarea[name=text]").val(),
           subject: jQuery('.form-' + index).find("input[name=subject]").val()
         };
         ajaxSend('.form-' + index, t);
@@ -77,5 +78,32 @@ $(function() {
   });
 
 
+//------------------------- card---------------------------------------
+  function customInput() {
+    $('input[type="number"]').each(function(index) {
+      $(this).wrap('<div class="custom-input-number catalog__form_input"></div>');
+      $(this).before('<button type="button" class="catalog__form_button catalog__form_button--minus">-</button>');
+      $(this).after('<button type="button" class="catalog__form_button catalog__form_button--plus">+</button>');
+    });
+  
+    $(".custom-input-number").on("click", function(e) {
+      e.preventDefault();
+      if (e.target.tagName !== "BUTTON") {
+        return;
+      }
+      var $input = $(this).find('input[type="number"]');
+      if (e.target.innerHTML === "+") {
+        $input[0].stepUp();
+        $input.trigger("input");
+      }
+      if (e.target.innerHTML === "-") {
+        $input[0].stepDown();
+        $input.trigger("input");
+      }
+    });
+  }
+  
+  customInput();
+  
 });
 
