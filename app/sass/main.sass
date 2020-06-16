@@ -65,11 +65,11 @@
 			+r(480)
 				font-size: 14px
 
+
 .info
 	position: fixed
-	top: 50%
+	bottom: 30px
 	right: 15px
-	transform: translate(0, -50%)
 	z-index: 1000
 
 	a
@@ -96,6 +96,7 @@
 			width: 100%
 			height: 100%
 			+transition
+
 
 .hero
 	position: relative
@@ -208,11 +209,11 @@
 
 .catalog
 	background-image: url(../img/catalog--bg.png)
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center
+	background-position: 0 0
 	padding-top: 320px
 	z-index: 3
+	+transition
+	animation: catalog 60s linear infinite
 
 	+r(567)
 		padding-top: 270px
@@ -287,6 +288,7 @@
 		min-width: 380px
 		padding: 15px 25px 25px
 		margin-bottom: 30px
+		background-color: #ffffff
 
 		+r(992)
 			min-width: 360px
@@ -305,7 +307,6 @@
 
 		&:hover,
 		&:focus
-			background-color: #ffffff
 			box-shadow: 0 0 15px 0 rgba($text, .1)
 
 		img
@@ -506,6 +507,10 @@
 				margin-bottom: 5px
 		
 		&_item
+			transform: translate(0, 150px)
+			opacity: 0
+			transition: all 1.2s
+
 			+r(767)
 				margin-bottom: 15px
 
@@ -517,6 +522,7 @@
 
 				br
 					display: none
+
 
 
 .contacts
@@ -665,5 +671,26 @@
 			text-decoration: underline
 
 
+
+.animation
+	transform: translate(0, 150px)
+	opacity: 0
+	transition: all 1.2s
+
+	&:nth-child(2)
+		transition-delay: .1s
+
+	&:nth-child(3)
+		transition-delay: .2s
+
+	&:nth-child(4)
+		transition-delay: .3s
+
+	&:nth-child(5)
+		transition-delay: .4s
+
+	&--active
+		transform: translate(0, 0)
+		opacity: 1
 
 @import "page"

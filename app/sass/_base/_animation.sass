@@ -1,14 +1,23 @@
 // animation: hover-back .3s linear 1 forwards
 
-// //----------------hover-img---------------
-// @keyframes slide-hover
-// 	0%
-// 		transform: scale(1)
-// 	100%
-// 		transform: scale(1.4)
+//----------------hover-img---------------
+@keyframes catalog
+	0%
+		background-position: 0 0
+	100%
+		background-position: -600px 600px
 
-// @keyframes slide-hover-back
-// 	0%
-// 		transform: scale(1.4)
-// 	100%
-// 		transform: scale(1)
+@keyframes pulse-inner
+		0%
+			transform: rotate(0deg)
+
+		100%
+			transform: rotate(0deg)
+
+.pulse
+	position: relative
+
+
+.pulse svg
+	animation: pulse-inner 3.8s ease-in infinite
+	animation-delay: 3s

@@ -7,11 +7,23 @@
 	z-index: 9999
 	background-color: #fff
 
-	svg
+	img
 		position: absolute
-		left: 50%
+		width: 0
+		height: 0
 		top: 50%
+		left: 50%
 		transform: translate(-50%, -50%)
-		width: 50%
-		fill: $accent
+		animation: preloader 3s linear 1 forwards
 
+
+@keyframes preloader
+	0%
+		width: 0%
+		height: 0%
+		opacity: .7
+
+	100%
+		width: 180%
+		height: 180%
+		opacity: 1
